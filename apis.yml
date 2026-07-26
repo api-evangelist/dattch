@@ -1,7 +1,22 @@
 aid: dattch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dattch.png
 name: Dattch
-description: Dattch is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Dattch (now HER, weareher.com) is a dating and social community app for LGBTQ+ women, nonbinary,
+  and queer people, founded by Robyn Exton. The platform pairs one-to-one matching with community spaces,
+  events, and social feeds, and reports more than 15 million users across 114+ countries. It operates as a
+  consumer mobile application on iOS and Android with no publicly documented developer API, developer portal,
+  or OpenAPI surface. Surfaced as a portfolio company of 500 Global and tracked in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/dattch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +26,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Dating
+- Social
+- LGBTQ
+- Community
+- Mobile App
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +44,18 @@ maintainers:
 common:
 - type: Website
   url: https://weareher.com
+- type: Blog
+  url: https://weareher.com/blog/
+- type: Support
+  url: https://support.weareher.com/hc/en-us
+- type: TermsOfService
+  url: https://weareher.com/terms/
+- type: PrivacyPolicy
+  url: https://weareher.com/privacy/
+- type: DomainSecurity
+  url: security/dattch-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
